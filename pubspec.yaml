@@ -3,7 +3,7 @@ name: flutter_mathjax_latex
 description: A Flutter Package to render Mathematics / Maths, Physics and Chemistry, Statistics Equations and expressions based on LaTeX, TeX, and MathML with HTML and JavaScript support.
 
 version: 0.0.1
-
+publish_to: 'none'
 homepage: https://github.com/territoryfan/flutter_mathjax_latex
 
 environment:
@@ -12,7 +12,11 @@ environment:
 
 
 dependencies:
-  webview_flutter_plus: ^0.1.1+10
+  # webview_flutter_plus: ^0.1.1+10
+  webview_flutter_plus:
+    path: packages/webview_flutter_plus
+  # webview_flutter_plus-0.3.0+2:
+  #   path: packages/webview_flutter_plus
   markdown: ^4.0.1
 
   flutter:
