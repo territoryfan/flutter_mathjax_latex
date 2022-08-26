@@ -22,7 +22,7 @@ A Flutter Package to render **fully offline** so many types of equations and exp
 
 ```yaml
 dependencies:
-  flutter_mathjax_latex: ^4.0.3+4
+  flutter_mathjax_latex: ^0.0.3
 ``` 
 
 **2:** You can install packages from the command line:
