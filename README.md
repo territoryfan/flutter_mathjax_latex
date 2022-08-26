@@ -1,31 +1,5 @@
 # flutter_mathjax_latex
-[![GitHub stars](https://img.shields.io/github/stars/shah-xad/flutter_mathjax_latex?style=social)](https://github.com/shah-xad/flutter_mathjax_latex/stargazers) [![pub package](https://img.shields.io/pub/v/flutter_mathjax_latex.svg)](https://pub.dev/packages/flutter_mathjax_latex)
-
-<img src="https://raw.githubusercontent.com/shah-xad/flutter_mathjax_latex/master/example/assets/flutter_mathjax_latex_banner.png" alt=""/>
-
-# Contents
-* [About](#about)
-* [Demo Video](#demo-video)
-* [Screenshots](#screenshots)
-* [How to use?](#how-to-use)
-   * [Android](#android)
-   * [iOS](#ios)
-   * [Web](#web)    
-* [Examples](#examples)
-    * [Quick Example](#quick-example)
-    * [TeXView Document](#texview-document-example)
-    * [TeXView Markdown](#texview-markdown-example)
-    * [TeXView Quiz](#texview-quiz-example)
-    * [TeXView Custom Fonts](#texview-custom-fonts-example)
-    * [TeXView Image and Video](#texview-image-and-video-example)
-    * [TeXView InkWell](#texview-inkwell-example)
-    * [Complete Example](#complete-example)
-* [Demo Application](#application-demo)
-* [Demo Web](#web-demo)
-* [Api Changes](#api-changes)
-* [Api Usage](#api-usage)
-* [Todo](#to-do)
-* [Cautions](#cautions)
+[![GitHub stars](https://img.shields.io/github/stars/territoryfan/flutter_mathjax_latex?style=social)](https://github.com/territoryfan/flutter_mathjax_latex) [![pub package](https://img.shields.io/pub/v/flutter_mathjax_latex.svg)](https://pub.dev/packages/flutter_mathjax_latex)
 
 # About
 A Flutter Package to render **fully offline** so many types of equations and expressions based on **LaTeX** , **TeX** and **MathML**, most commonly used are as followings:
@@ -42,23 +16,6 @@ A Flutter Package to render **fully offline** so many types of equations and exp
 
 - It also includes full **HTML** with **JavaScript** support.
 
-# How it works?
-
-Basically it's a flutter dart wrapper around the most powerful JavaScript libraries [MathJax](https://github.com/mathjax/MathJax) and [Katex](https://github.com/KaTeX/KaTeX) which render the equations in [webview_flutter_plus](https://pub.dartlang.org/packages/webview_flutter_plus).
-
-
-# Demo Video
-
-## [Click to Watch Demo on Youtube](https://www.youtube.com/watch?v=YiNbVEXV_NM)
-
-# Screenshots
- Fonts Sample  |Quiz Sample    | TeX Document
-:-------------:|:-------------:|:-------------:
-<img src="https://i.postimg.cc/651PXKYC/screenshot-1.png"/> | <img src="https://i.postimg.cc/wjyGxrGZ/screenshot-2.png"/> | <img src="https://i.postimg.cc/k4cjhP26/screenshot-3.png"/>
-
- TeX Document  | Image & Video | InkWell 
-:-------------:|:-------------:|:-------------:
-<img src="https://i.postimg.cc/d0GNryv9/screenshot-4.png"/> | <img src="https://i.postimg.cc/prLswcj0/screenshot-5.png"/> | <img src="https://i.postimg.cc/rwBYDJ6m/screenshot-6.png"/>
 
 # How to use?
 **1:** Add flutter_mathjax_latex latest  [![pub package](https://img.shields.io/pub/v/flutter_mathjax_latex.svg)](https://pub.dev/packages/flutter_mathjax_latex) version under dependencies to your package's pubspec.yaml file.
@@ -148,7 +105,7 @@ TeXView(
               style: TeXViewStyle(textAlign: TeXViewTextAlign.Center)),
           TeXViewContainer(
             child: TeXViewImage.network(
-                'https://raw.githubusercontent.com/shah-xad/flutter_mathjax_latex/master/example/assets/flutter_mathjax_latex_banner.png'),
+                'https://raw.githubusercontent.com/territoryfan/flutter_mathjax_latex/main/example/assets/flutter_mathjax_latex_banner.png'),
             style: TeXViewStyle(
               margin: TeXViewMargin.all(10),
               borderRadius: TeXViewBorderRadius.all(20),
@@ -174,39 +131,8 @@ TeXView(
    ),
   )
 ```
-
-### TeXView Document Example
-#### [TeXView Document Example](https://github.com/shah-xad/flutter_mathjax_latex/blob/master/example/lib/tex_view_document_example.dart)
-
-### TeXView Markdown Example
-#### [TeXView Markdown Example](https://github.com/shah-xad/flutter_mathjax_latex/blob/master/example/lib/tex_view_markdown_example.dart)
-
-### TeXView Quiz Example
-#### [TeXView Quiz Example](https://github.com/shah-xad/flutter_mathjax_latex/blob/master/example/lib/tex_view_quiz_example.dart)
-
-### TeXView Custom Fonts Example
-#### [TeXView Custom Fonts Example](https://github.com/shah-xad/flutter_mathjax_latex/blob/master/example/lib/tex_view_fonts_example.dart)
-
-### TeXView Image and Video Example
-#### [TeXView Image and Video Example](https://github.com/shah-xad/flutter_mathjax_latex/blob/master/example/lib/tex_view_image_video_example.dart)
-
-### TeXView InkWell Example
-#### [TeXView InkWell Example](https://github.com/shah-xad/flutter_mathjax_latex/blob/master/example/lib/tex_view_ink_well_example.dart)
-
-### Complete Example
-#### [Complete Example Code](https://github.com/shah-xad/flutter_mathjax_latex/tree/master/example)
-
-
-# Application Demo.
-<a href='https://play.google.com/store/apps/details?id=com.shahxad.flutter_mathjax_latex_example&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
-
-[Demo Source](https://github.com/shah-xad/flutter_mathjax_latex/tree/master/example)
-
-# Web Demo.
-You can find web demo at [https://flutter-tex.web.app](https://flutter-tex.web.app)
-
 # Api Changes.
-* Please see [CHANGELOG.md](https://github.com/shah-xad/flutter_mathjax_latex/blob/master/CHANGELOG.md).
+* Please see [CHANGELOG.md](https://github.com/territoryfan/flutter_mathjax_latex/blob/main/CHANGELOG.md).
 
 # Api Usage.
 - `children:` A list of `TeXViewWidget`
@@ -223,8 +149,6 @@ You can find web demo at [https://flutter-tex.web.app](https://flutter-tex.web.a
 
 
 - `TeXViewStyle()` You can style each and everything using `TeXViewStyle()` or by using custom `CSS` code by `TeXViewStyle.fromCSS()` where you can pass hard coded String containing CSS code. For more information please check the example.
-    
-- `renderingEngine:` Render Engine to render TeX (Default is Katex Rendering Engine). Use **Katex RenderingEngine** for fast render and  **MathJax RenderingEngine** for quality render.
 
 - `loadingWidgetBuilder:` Show a loading widget before rendering completes.
 
@@ -232,12 +156,4 @@ You can find web demo at [https://flutter-tex.web.app](https://flutter-tex.web.a
   
 - `onTeXViewCreated:` Callback when TeXView loading finishes.
 
-For more please see the [Example](https://github.com/shah-xad/flutter_mathjax_latex/tree/master/example).
-
-# To Do:
-- ~~Speed Optimizations as it's a bit slow rendering speed. It takes 1-2 seconds to render after application loaded.~~ (Solved by adding Katex Support)
-- `Bug in Web Support` on `setState` everything disappears.
-
-# Cautions:
-- Please avoid using too many `TeXView` in a single page, because this is based on [webview_flutter_plus](https://pub.dartlang.org/packages/webview_flutter_plus) a complete web browser. Which may cause slowing down your app. I am trying to add all necessary widgets within `TeXView`, So please prefer to use `TeXViewWidget`. You can check [example folder](https://github.com/shah-xad/flutter_mathjax_latex/tree/master/example) for details. If you find any problem you can [report an issue](https://github.com/shah-xad/flutter_mathjax_latex/issues/new).
-# flutter_mathjax_latex_latex
+For more please see the [Example](https://github.com/territoryfan/flutter_mathjax_latex/tree/main/example).

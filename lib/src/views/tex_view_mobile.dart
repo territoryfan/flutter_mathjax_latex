@@ -73,7 +73,7 @@ class TeXViewState extends State<TeXView> with AutomaticKeepAliveClientMixin {
   void _buildTeXView() {
     if (_pageLoaded && _controller != null && getRawData(widget) != _lastData) {
       if (widget.loadingWidgetBuilder != null) _height = minH;
-      _controller.evaluateJavascript(
+      _controller.webViewController.evaluateJavascript(
           "var jsonData = " + getRawData(widget) + ";initView(jsonData);");
       _lastData = getRawData(widget);
     }
